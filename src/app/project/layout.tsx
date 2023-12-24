@@ -7,9 +7,11 @@ type Props = {
 
 export default function ProjectLayout({children}: Props) {
   return (
-    <div className='container grid grid-cols-2'>
-        <SidebarProject/>
-        {children}
+    <div className='container grid grid-cols-3'>
+        {/* <SidebarProject/> */}
+        <div className=''>
+            {children}
+        </div>
     </div>
   )
 }
