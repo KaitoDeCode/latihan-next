@@ -7,7 +7,7 @@ const Navbar = () => {
     const pathname = usePathname();
     const router = useRouter();
 
-    const disableNavbar = ["/login","/register"];
+    const disableNavbar = ["/login","/register",'/admin'];
 
   return (
     <>
