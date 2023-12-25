@@ -2,7 +2,9 @@ import MapingProject from "./MapingProject";
 type Props = {}
 
 const getData = async() =>{
-  const res = await fetch(`${process.env.API_URL}/project`)
+  const res = await fetch(`${process.env.API_URL}/project`,{
+    cache: "no-store"
+  })
   if(!res.ok){
     throw new Error("failed to fetch data")
   }
