@@ -9,7 +9,7 @@ export default function ProjectLayout({children}: Props) {
   return (
     <div className='container grid grid-cols-3'>
         {/* <SidebarProject/> */}
-        <div className=''>
+        <div className='col-span-3'>
             {children}
         </div>
     </div>
